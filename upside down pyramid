@@ -1,0 +1,30 @@
+lude <stdio.h>
+
+int main(void)
+ {
+    
+    char ch = 'P';
+    for (int size = 4; size >= 1; size--) 
+    {
+        for (int k = 0; k < size; k++)
+         {
+            printf("%c", ch + k);   
+            if (k < size - 1) printf(" "); 
+        }
+        printf("\n");
+        ch = ch + size;         
+    }
+    ch = 'O';
+    for (int size = 1; size <= 5; size++) 
+    {
+        for (int k = 0; k < size; k++)
+         {
+            printf("%c", ch - k);
+            if (k < size - 1)
+             printf(" ");
+         }
+        printf("\n");
+        ch = ch - size;           
+    }
+
+    return 0;
